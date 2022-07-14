@@ -1,19 +1,18 @@
-import "./App.css";
-import NavigationBar from "./component/NavigationBar";
-import "./style/landingPage.css";
-import Movie from "./component/Movie";
+import "./Style/index.css";
+import Header from "./component/Header";
+import HomePage from "./pages/HomePage";
 function App() {
   return (
     <div>
       {/* START OF NAVIGATION */}
       <div className="myBG">
-        <NavigationBar />
+        <Header />
       </div>
       {/* END OF NAVIGATION */}
 
       {/* START OF LIST MOVIE */}
       <div className="ListMovie">
-        <Movie />
+        <HomePage />
       </div>
       {/* END OF LIST MOVIE */}
     </div>
