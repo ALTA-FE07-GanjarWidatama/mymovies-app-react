@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
+import React from "react";
 
 export const WithRouter = (Component) => {
   const Wrapper = (props) => {
@@ -7,5 +8,6 @@ export const WithRouter = (Component) => {
 
     return <Component {...props} navigate={navigate} params={params} />;
   };
+
   return Wrapper;
 };
