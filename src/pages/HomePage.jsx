@@ -22,7 +22,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchData();
+    fetchData(1);
   }, []);
 
   const fetchData = async (page) => {
